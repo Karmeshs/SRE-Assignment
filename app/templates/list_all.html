@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List_ALL</title>
+</head>
+<body>
+	<h3>Profiles</h3>
+	<br>
+	<table border width="7" cellspacing =5 cellpadding =7 >
+		<thead>
+			<th>Account Number</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>DOB</th>
+        </thead>
+		{% for data in profiles %}
+		<tbody>
+			<td>{{data.account_number}}</td>
+			<td>{{data.name}}</td>
+			<td>{{data.email}}</td>
+			<td>{{data.dob}}</td>
+		</tbody>
+		{% endfor%}
+	</table>
+</body>
+</html>
